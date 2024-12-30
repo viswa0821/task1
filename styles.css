@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://img.freepik.com/free-photo/inside-palace-kingship-was-challenged-illustration_456031-26.jpg?t=st=1735400746~exp=1735404346~hmac=aa2b5de28feaffd8120cd333ab7fcbe9c37119f0a4e10b27268fa4757a360597&w=1060') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* About Section */
+.about {
+    padding: 40px;
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Featured Movies/Shows Section */
+.featured {
+    padding: 40px;
+    background-color: #252525;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-item {
+    width: 30%;
+    margin: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.featured-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.featured-item p {
+    font-size: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #bbb;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .featured-items {
+        flex-direction: column;
+    }
+
+    .featured-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
